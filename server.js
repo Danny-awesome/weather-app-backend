@@ -9,7 +9,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.use('/api/city', weather_info)
-// app.use(error);
+app.use(error);
 
 require('./startup/db_connect_config')();
 require('./startup/logging')();
